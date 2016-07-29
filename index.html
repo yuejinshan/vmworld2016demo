@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+   
+        div{
+            width: 50%;
+            margin: 0 auto;
+            position: relative;
+            left:20%;
+            right:33%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        </style>
+        <script>
+            window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+            
+            return t;
+            }(document, "script", "twitter-wjs"));
+</script>
+    </head>
+    <body>
+       <div class="inner">
+            <h1>Docker's NGINX Page</h1>
+            <a class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?text=I%20just%20created%20a%20@Docker%20app%20at%20#VMWorld"
+            data-size="large">
+            Tweet</a>
+            </div>
+
+    </body>
+</html>
