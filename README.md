@@ -15,9 +15,10 @@ clone this project
 
 5. In terminal run 
 
-    ```bash
+    ```
     $ docker stop vmworld
-    $ docker rm vmworld``` 
+    $ docker rm vmworld
+    ``` 
 
 ## Swarm Mode demo:
 ### Preparation
@@ -25,10 +26,11 @@ create the nodes and swarm by running `swarm-node.vbox-setup.sh` from this repo 
 
 find ip address of manager1 machine
 
-```bash
+```
 $ docker-machine ssh manager1
 docker@manager1:~$ docker pull manomarks/visualizer
-docker@manager1:~$ docker run -it -d -p 8080:8080 -e HOST=IP_ADDRESS -v /var/run/docker.sock:/var/run/docker.sock manomarks/visualizer docker pull manomarks/visualizer```
+docker@manager1:~$ docker run -it -d -p 8080:8080 -e HOST=IP_ADDRESS -v /var/run/docker.sock:/var/run/docker.sock manomarks/visualizer docker pull manomarks/visualizer
+```
 
 open browser to IP_ADDRESS:8080
 open another terminal window or tab
@@ -38,9 +40,10 @@ open another terminal window or tab
 
 2. Demo adding a service
 
-```bash
+```
 docker@manager1:~$ docker service create --name web nginx:latest
-docker@manager1:~$ docker node ls```
+docker@manager1:~$ docker node ls
+```
 
 3. Switch over to the browser and show them the node with one service one it
 
