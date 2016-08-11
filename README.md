@@ -7,7 +7,7 @@ clone this project
 
 2. Make sure you're in the project folder, the run
 
-   `docker run --name vmworld -v 'pwd':/usr/share/nginx/html -d -p 8080:80 nginx`
+   `docker run --name vmworld -v $(pwd):/usr/share/nginx/html -d -p 8080:80 nginx`
 
 3. Open browser to localhost:8080
 
