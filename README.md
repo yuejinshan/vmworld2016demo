@@ -1,4 +1,4 @@
-# VMWorld 2016 Demo
+# VMworld 2016 Demo
 clone this project
 `git clone https://github.com/ManoMarks/vmworld2016demo.git`
 

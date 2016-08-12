@@ -2,43 +2,39 @@
     <head>
         <style>
    
+        body {
+        	background-image: linear-gradient(-74deg, transparent 90%, rgba(255, 255, 255, 0.23) 20%), linear-gradient(-74deg, transparent 83%, rgba(255, 255, 255, 0.18) 15%), linear-gradient(-74deg, transparent 76%, rgba(255, 255, 255, 0.1) 15%), linear-gradient(to top, #127ab1, #1799e0, #1796db);
+    		background-size: cover;
+    		margin-bottom: 0px!important;
+        }
+        
         div{
+            font-family: 'Geomanist', sans-serif;
+  			font-weight: normal;
+  			color: white;
             width: 50%;
             margin: 0 auto;
             position: relative;
-            left:20%;
-            right:33%;
             top: 50%;
             transform: translateY(-50%);
+
         }
         </style>
-        <script>
-            window.twttr = (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-                t = window.twttr || {};
-            if (d.getElementById(id)) return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-            
-            t._e = [];
-            t.ready = function(f) {
-                t._e.push(f);
-            };
-            
-            return t;
-            }(document, "script", "twitter-wjs"));
-</script>
     </head>
+   
     <body>
+    
+       <img src=https://www.docker.com/sites/all/themes/docker/assets/images/brand-full.svg width=20%></img>
+       
        <div class="inner">
-            <h1>Docker's NGINX Page</h1>
-            <a class="twitter-share-button"
-            href="https://twitter.com/intent/tweet?text=I%20just%20created%20a%20@Docker%20app%20at%20#VMWorld"
-            data-size="large">
-            Tweet</a>
+            <h1>Welcome to VMworld 2016!</h1>
+			Congratulations on deploying your first Docker container, why not let the world know!
+		
+		  	<p>   
+
+			 <a href="https://twitter.com/intent/tweet?button_hashtag=myfirstcontainer" class="twitter-hashtag-button" data-size="large" data-text="I just deployed my first @docker container at #VMworld2016" data-url="http://www.docker.com" data-lang="en" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
     </body>
+    
 </html>
