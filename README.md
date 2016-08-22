@@ -29,7 +29,7 @@ find ip address of manager1 machine
 ```
 $ docker-machine ssh manager1
 docker@manager1:~$ docker pull manomarks/visualizer
-docker@manager1:~$ docker run -it -d -p 8080:8080 -e HOST=IP_ADDRESS -v /var/run/docker.sock:/var/run/docker.sock manomarks/visualizer docker pull manomarks/visualizer
+docker@manager1:~$ docker run -it -d -p 8080:8080 -e HOST=IP_ADDRESS -v /var/run/docker.sock:/var/run/docker.sock manomarks/visualizer 
 ```
 
 open browser to IP_ADDRESS:8080
