@@ -55,7 +55,7 @@
 	
 7. Show the redistributed containers in the visualizer (the visualizer will still show `worker1` as green because it is still running)
 
-	`docker@manager1:~$ docker node ls worker1 --pretty` 
+	`docker@manager1:~$ docker node inspect worker1 --pretty` 
 	
 8. Scale the web service down to 10 and show how all the containers now have 2 tasks on them
 
